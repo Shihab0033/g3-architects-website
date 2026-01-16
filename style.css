@@ -123,6 +123,30 @@ main>section {
     font-weight: 500;
 }
 
+/*feature section related styles*/
+#feature-section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+
+.feature-card .feature-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.feature-card {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.features {
+    gap: 140px;
+}
+
 /*some fact related style*/
 .facts-container {
     display: grid;
@@ -152,6 +176,23 @@ main>section {
     margin-top: 10px;
 }
 
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-year {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.featured-architect img {
+    width: 100%;
+}
+
 /*sponsor related style*/
 .sponsor-info {
     max-width: 540px;
@@ -168,13 +209,30 @@ main>section {
     filter: grayscale(100%);
 }
 
+/*footer related styles*/
+footer {
+    background-color: rgba(255, 244, 231, 1);
+    width: 1440px;
+    height: 100px;
+    margin: 130px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    margin: 38px auto;
+    display: flex;
+}
+
 /*----------responsive media query---------*/
 /*small size device*/
 @media screen and (max-width: 576px) {
 
     .navbar,
     .nav-links,
-    .teams {
+    .teams,
+    .features {
         flex-direction: column;
     }
 
@@ -188,17 +246,41 @@ main>section {
         margin-left: 20px;
         max-width: 100%;
     }
+
+    .facts-container,
+    .sponsor-companies {
+        justify-items: center;
+        gap: 20px;
+    }
+
+    #experience-badge {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    footer {
+        background-color: rgba(255, 244, 231, 1);
+        width: 100%;
+        height: 65px;
+        margin: 80px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
 }
 
-.facts-container,
-.sponsor-companies {
-    justify-items: center;
-    gap: 20px;
-}
+
 
 /*medium size device*/
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams {
+
+    .teams,
+    .features {
         flex-direction: column;
     }
 
@@ -213,5 +295,14 @@ main>section {
         gap: 50px;
     }
 
+    footer {
+        background-color: rgba(255, 244, 231, 1);
+        width: 100%;
+        height: 80px;
+        margin: 100px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+    }
 }
